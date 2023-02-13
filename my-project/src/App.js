@@ -1,5 +1,6 @@
 import Navbar from './Components/Navbar';
 import { Route, Routes} from 'react-router-dom';
+import 'bootstrap/dist/css/bootstrap.min.css';
 import Home from "./pages/Home";
 import About from './pages/About';
 import Contact from './pages/Contact';
