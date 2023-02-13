@@ -5,9 +5,11 @@
     font-family: 'Sono', sans-serif;
     font-family: 'Unbounded', cursive;
   }
-  
+
   li {
-    padding: 10px;
+    font-weight: bold;
   }
   
-  
+  h1 {
+    text-align: center;
+  }

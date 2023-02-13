@@ -7,31 +7,35 @@ import "../styles/Navbar.css";
 
 function Navbar() {
   return (
-  
-    <div className='nav-bar'>
-        <div className='logo'>
-            <img className='image-logo' src={Logo} alt="sample logo" />
-        </div>
-        <div className='list'>
-            <ul className="nav justify-content-end">
-                    <li className="nav-item" >
-                        <Link to="/" Name="nav-link activeclass" aria-current="page">Home</Link>
-                    </li>
-                    <li className="nav-item">
-                        <Link to="menu" Name="nav-link activeclass" aria-current="page">Menu</Link>
-                    </li>
-                    <li className="nav-item">
-                        <Link to="about" Name="nav-link activeclass" aria-current="page">About Us</Link>
-                    </li>
-                    <li className="nav-item">
-                        <Link to="contact" Name="nav-link activeclass" aria-current="page">Contact Us</Link>
-                    </li>
-                </ul>
-        </div>
+    <>
 
+    <nav className="navbar navbar-expand-lg fixed-top navbar-dark bg-dark">
+  <Link to="/" className="navbar-brand"><img className='image-logo' src={Logo} alt="sample logo" /></Link>
+  <button className="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+    <span className="navbar-toggler-icon"></span>
+  </button>
 
-     
-    </div>
+  <div className="collapse navbar-collapse" id="navbarSupportedContent">
+    <ul className="navbar-nav mr-auto">
+      <li className="nav-item active">
+        <Link to="/" className="nav-link">Home</Link>
+      </li>
+      <li className="nav-item">
+        <Link to="menu" className="nav-link">Menu</Link>
+      </li>
+      <li className="nav-item">
+        <Link to="travel" className="nav-link">Travel</Link>
+      </li>
+      <li className="nav-item">
+        <Link to="about" className="nav-link">About Us</Link>
+      </li>
+      <li className="nav-item">
+        <Link to="contact" className="nav-link">Contact Us</Link>
+      </li>
+    </ul>
+  </div>
+</nav>
+    </>
   )
 }
 
