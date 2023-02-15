@@ -14,7 +14,7 @@ window.addEventListener('scroll',function () {
 const Navbar = () => {
     return (
         <div>
-        <nav className="navbar fixed-top navbar-expand-lg  bg-transparent navbar-dark">
+        <nav className="navbar fixed-top navbar-expand-lg  bg-transparent">
   <Link to="/" className="navbar-brand">
    <img src={logo1} alt="" width="100" height="100" class="d-inline-block align-text-top" />
   </Link>
