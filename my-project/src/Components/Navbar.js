@@ -1,13 +1,22 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
+import logo1 from '../assets/logo.png'
+
+const nav = document.querySelector('nav');
+window.addEventListener('scroll',function () {
+  if(this.window.pageYOffset >50){
+    nav.classList.add('navbar-dark','shadow');
+  }else{
+    nav.classList.remove('navbar-dark');
+  }
+})
 
 const Navbar = () => {
     return (
         <div>
-        <nav className="navbar fixed-top navbar-expand-lg navbar-dark bg-dark">
+        <nav className="navbar fixed-top navbar-expand-lg  bg-transparent navbar-dark">
   <Link to="/" className="navbar-brand">
-  {/* <img src="https://picsum.photos/200/300" alt="" width="50" height="34" class="d-inline-block align-text-top" /> */}
-  LOGO
+   <img src={logo1} alt="" width="100" height="100" class="d-inline-block align-text-top" />
   </Link>
   <button className="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
     <span className="navbar-toggler-icon"></span>
