@@ -486,13 +486,14 @@ box-shadow: 0 2px 20px rgba(0,0,0,0.5);
 
 .card-body {
 color: #fff;
-background: #2a2f40;
+padding: 10px;
 }
 
 .card-title {
 font-size: 25px;
 font-weight: 700;
 transition: all .5s ease-in-out;
+
 }
 
 .btn-group .view-more {
@@ -548,6 +549,7 @@ color: #262626;
 .row.single-form {
 	box-shadow: 0 2px 20px -5px rgba(0,0,0,0.5);
 }
+
 .left {
 	background: blue;
 	padding: 160px 58px;
