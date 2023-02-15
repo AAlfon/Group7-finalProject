@@ -5,9 +5,65 @@
     font-family: 'Sono', sans-serif;
     font-family: 'Unbounded', cursive;
   }
+  /* home page css */
+ .home-page {
   
-  li {
-    padding: 10px;
-  }
+  height: 100vh;
+  width: 100%;
   
+ }
+
+ .home-page h1 {
+  display: flex;
+  justify-content: center;
+  padding: 20px 40px;
+ }
+
+.search {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 20px 40px;
+  border-bottom: 4px solid goldenrod;
+  background-color: aqua;
+
+}
+.search-bar{
+  position: relative;
+  width: 400px;
+  padding:  25px 25px;
+  border-radius: 15px;
+  cursor: pointer;
+}
+
+.search button {
+  position: relative;
+  right: 119px;
+  outline: none;
+  padding: 25px 25px;
+  border-radius: 15px;
+
+  cursor: pointer;
+ 
+}
+.categories {
+  height: 100vh;
+  width: 100%;
   
+}
+
+
+.img-slide {
+  height: 400px;
+  width: 100%;
+  object-fit: contain;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.categories-content {
+  border: 1px solid black;
+  
+  height: 400px;
+}
