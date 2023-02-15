@@ -1,12 +1,29 @@
+
+
 .nav-bar {
+    background-image: url("../assets/bg-home.webp");
     font-size: 30px;
-    font-weight: 600;
     border: 1px solid black;
+    text-decoration: none;
+    
   }
+
+
+  
+  .nav-item {
+
+    padding:20px;
+    
+ } 
+ li .nav-item {
+  text-decoration: none;
+ }
+
   .logo {
-    height: 200px;
+    
     width: 200px;
     padding: 30px;
+
     border: 1px solid black;
   }
   
