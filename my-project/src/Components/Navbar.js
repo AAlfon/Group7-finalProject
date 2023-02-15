@@ -4,7 +4,7 @@ import logo1 from '../assets/logo.png'
 
 const nav = document.querySelector('nav');
 window.addEventListener('scroll',function () {
-  if(this.window.pageYOffset >50){
+  if(this.window.pageYOffset >20){
     nav.classList.add('navbar-dark','shadow');
   }else{
     nav.classList.remove('navbar-dark');
