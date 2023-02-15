@@ -113,6 +113,7 @@ h1 {
     width: 130px;
     text-align: center;
   }
+
   .wrapper {
     width: 1060px;
     margin: auto;
@@ -485,8 +486,7 @@ box-shadow: 0 2px 20px rgba(0,0,0,0.5);
 }
 
 .card-body {
-color: #fff;
-padding: 10px;
+color: #000;
 }
 
 .card-title {
@@ -511,6 +511,11 @@ font-size: 20px;
 font-weight: 600;    
 transition: .6s;
 }
+
+.view-more:hover {
+  background-color: blue;
+}
+
 .card:hover .star-rating{
   animation: pulse .5s ease-in-out infinite;
 }
