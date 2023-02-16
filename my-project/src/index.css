@@ -7,6 +7,10 @@
   font-family: 'Unbounded', cursive;
 }
 
+html {
+  scroll-behavior: smooth;
+}
+
 body {
   background-color: #f0eaea;
   
@@ -18,6 +22,7 @@ h1 {
   
 }
 
+
 .blog-header {
     line-height: 1;
     border-bottom: 1px solid #e5e5e5;
@@ -26,13 +31,17 @@ h1 {
   
   .blog-header-logo {
     font-family: "Playfair Display", Georgia, "Times New Roman", serif/*rtl:Amiri, Georgia, "Times New Roman", serif*/;
-    font-size: 2.25rem;
+    font-size: 2rem;
   }
   
   .blog-header-logo:hover {
     text-decoration: none;
   }
   
+  #introduction {
+    margin: 100px auto;
+
+  }
  
   
   .display-4 {
@@ -46,15 +55,18 @@ h1 {
   .navbar {
     font-weight: 600;
     font-size: 20px;
-    gap: 25px;
+    /* gap: 25px;
     padding: 5px 20px;
     background: rgb(251,176,70);
-    background: linear-gradient(212deg, rgba(251,176,70,0.5466561624649859) 0%, rgba(0,0,0,0.7483368347338936) 50%, rgba(115,115,115,0.4906337535014006) 100%);
+    background: linear-gradient(212deg, rgba(251,176,70,0.5466561624649859) 0%, rgba(0,0,0,0.7483368347338936) 50%, rgba(115,115,115,0.4906337535014006) 100%); */
   }
   .nav-link {
     color: goldenrod;
   }
   
+  .blue {
+    background-color: blue;
+  }
   
   .nav-scroller {
     position: relative;
@@ -95,11 +107,7 @@ h1 {
   }
 
   /* Banner */
-  .banner {
-    padding:0%;
-    
-  }
-
+  
   .banner video {
     /* for oberservation edit*/
     /* background-image: url(https://www.gffoodservice.com.au/content/uploads/2019/08/culinary_terms-hero-1-@2x-1.jpg); */
@@ -110,36 +118,6 @@ h1 {
     background-position: center;
   }
 
- 
-
-  /* .content h2 {
-    font-family: alfa slab one;
-    color: #ef0554;
-    font-size: 60px;
-  }
-  .content p {
-    width: 50%;
-    color: rgba(0, 0, 0, 0.6);
-    line-height: 2;
-  } */
-
-  .btn a {
-    text-decoration: none;
-    background: #ef0554;
-    padding: 15px 10px;
-    display: inline-block;
-    color: #fff;
-    margin-top: 15px;
-    border-radius: 50px;
-    width: 130px;
-    text-align: center;
-  }
-
-  .wrapper {
-    width: 1060px;
-    margin: auto;
-    padding-bottom: 12%;
-  }
 
   @media only screen and (min-width: 768px) and (max-width: 991px) {
     .wrapper {
@@ -191,10 +169,6 @@ h1 {
     letter-spacing: 2px; 
 }
 
-/* .content {
-  padding: 10%;
-} */
-
 .content {
   position: absolute;
   top: 0;
@@ -205,7 +179,6 @@ h1 {
   flex-direction: column;
   align-items: center;
   justify-content: center;
-  background-color: rgba(0,0,0,0.2);
 }
 
 .content h1 {
@@ -564,7 +537,7 @@ transition: all .6s ease-in;
 }
 
 .star-rating {
-font-size: 20px; 
+font-size: 15px; 
 font-weight: 600;    
 transition: .6s;
 }

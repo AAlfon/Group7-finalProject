@@ -1,40 +1,40 @@
 import React from 'react';
-import {useRef} from "react";
+import { useRef } from "react";
 import Testimonials from '../Components/Testimonials';
 import bannerVid from '../assets/video2.mp4';
 
 const Home = () => {
-    const introduction = useRef(null);
 
-    const scrollToSection = (elementRef) =>{
-      window.scroll({
-        top: elementRef.current.offsetTop,
-        behavior: 'smooth',
-      });
-    };
+  const introduction = useRef(null);
+
   return (
-    <div className='home-page'>
-       
-      <div className='container-fluid banner'>
-            <div className="content">
-              <h1>HAK foodblog</h1>
-              <button onClick={() => scrollToSection(introduction)} type="button" className='start-btn' >View Recipies</button>
-              
-            </div>
-          <video src={bannerVid} autoPlay  loop muted />
-        <div>
-          <div ref={introduction}  className="wrapper intruduction" id='introduction'>
-            <h1> this is an intruduction to our site</h1>
-              <p>
-              rovide a valid href, but still need the element to resemble a link, use a button and change 
-              it with appropriate 
-              </p>
-          </div>
-        </div>
-      </div>
+      
+    <div> 
+      <video id="myVideo" loop autoPlay muted >
+        <source src={bannerVid} type="video/mp4" />
+      </video>
 
-      <header className="blog-header" >
-        <div className="container">
+      <div className="content">
+      <h1>HAK foodblog</h1>
+         {/* button link */}
+         <a href="./#introduction"><button className='btn start-btn'>View Recipies</button></a>
+     </div>
+     
+     <div id='introduction'>
+    <div ref={introduction} className="wrapper introduction" >
+            <h1> this is an introduction to our site</h1>
+            <p>
+              rovide a valid href, but still need the element to resemble a link, use a button and change
+              it with appropriate,  rovide a valid href, but still need the element to resemble a link, use a button and change
+              it with appropriate.
+            </p>
+          </div>
+          </div>
+
+     
+<div>
+      <header className="blog-header">
+        <div className="container-fluid">
           <div className="nav-scroller py-1 mb-2">
             <nav className="nav nav-menu d-flex  justify-content-between mx-5">
               <a className="p-2 link-secondary" href="#">Menu</a>
@@ -218,6 +218,7 @@ const Home = () => {
           <Testimonials />
         </div>
       </main>
+    </div>
     </div>
   );
 }

@@ -7,7 +7,6 @@ import Menu from './pages/Menu';
 import Travel from './pages/Travel';
 import Footer from './Components/Footer';
 
-
 const App = () => {
   return (
       <div className='App'>
