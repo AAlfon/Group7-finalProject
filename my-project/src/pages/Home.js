@@ -1,9 +1,28 @@
 import React from 'react';
 import Testimonials from '../Components/Testimonials';
+import bannerVid from '../assets/video2.mp4';
 
 const Home = () => {
   return (
     <div className='home-page'>
+       
+      <div className='container-fluid banner'>
+            <div className="content">
+              <h1>HAK foodblog</h1>
+              <button className='start-btn'>Get started</button>
+              
+            </div>
+          <video src={bannerVid} autoPlay  loop muted />
+        <div>
+          <div className="wrapper intruduction">
+            <h1> this is an intruduction to our site</h1>
+              <p>
+              rovide a valid href, but still need the element to resemble a link, use a button and change 
+              it with appropriate 
+              </p>
+          </div>
+        </div>
+      </div>
 
       <header classNameName="blog-header">
         <div classNameName="container">
@@ -21,16 +40,6 @@ const Home = () => {
           </div>
         </div>
       </header>
-
-
-      <div className='container-fluid banner'>
-        <div>
-          <div className="wrapper">
-            <div className="content">
-            </div>
-          </div>
-        </div>
-      </div>
 
 
       <main className="container my-5">
