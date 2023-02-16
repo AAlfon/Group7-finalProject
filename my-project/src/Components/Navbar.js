@@ -9,9 +9,9 @@ const Navbar = () => {
   const [change, setChange] = useState('transparent')
   const [logoHeight, setlogoHeight] = useState(100)
   const changeBackground = () => {
-    console.log(window.scrollY)
+    // console.log(window.scrollY)
     if (window.scrollY >= 80) {
-      setChange('blue')
+      setChange('black')
       setlogoHeight(70)
     } else {
       setChange('transparent')
