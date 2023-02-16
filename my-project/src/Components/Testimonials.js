@@ -24,7 +24,7 @@ const Testimonials = () => {
                                   </div>
                               </div>
                               <div className="col-md-6">
-                                  <div className="content">
+                                  <div className="content-testimonials">
                                       <p><span><i className="fa fa-quote-left"></i></span>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Vel a eius excepturi molestias commodi aliquam error magnam consectetur laboriosam numquam.</p>
                                       <p className="socials">
                                           <i className="fa fa-twitter"></i>
@@ -53,7 +53,7 @@ const Testimonials = () => {
                                   </div>
                               </div>
                               <div className="col-md-6">
-                                  <div className="content">
+                                  <div className="content-testimonials">
                                       <p><span><i className="fa fa-quote-left"></i></span>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Vel a eius excepturi molestias commodi aliquam error magnam consectetur laboriosam numquam, minima eveniet nostrum sequi saepe.</p>
                                       <p className="socials">
                                           <i className="fa fa-twitter"></i>
@@ -82,7 +82,7 @@ const Testimonials = () => {
                                   </div>
                               </div>
                               <div className="col-md-6">
-                                  <div className="content">
+                                  <div className="content-testimonials">
                                       <p><span><i className="fa fa-quote-left"></i></span>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Vel a eius excepturi molestias commodi aliquam error magnam consectetur laboriosam numquam, minima eveniet nostrum sequi saepe ipsam non ea, inventore tenetur! Corporis commodi consequatur molestiae voluptatum!</p>
                                       <p className="socials">
                                           <i className="fa fa-twitter"></i>
@@ -111,7 +111,7 @@ const Testimonials = () => {
                                   </div>
                               </div>
                               <div className="col-md-6">
-                                  <div className="content">
+                                  <div className="content-testimonials">
                                       <p><span><i className="fa fa-quote-left"></i></span>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Vel a eius excepturi molestias commodi aliquam error magnam consectetur laboriosam numquam.</p>
                                       <p className="socials">
                                           <i className="fa fa-twitter"></i>
@@ -140,7 +140,7 @@ const Testimonials = () => {
                                   </div>
                               </div>
                               <div className="col-md-6">
-                                  <div className="content">
+                                  <div className="content-testimonials">
                                       <p><span><i className="fa fa-quote-left"></i></span>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Vel a eius excepturi molestias commodi aliquam error magnam consectetur laboriosam numquam, minima eveniet nostrum sequi saepe ipsam non ea, inventore tenetur!</p>
                                       <p className="socials">
                                           <i className="fa fa-twitter"></i>
