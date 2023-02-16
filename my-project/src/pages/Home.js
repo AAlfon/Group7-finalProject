@@ -1,20 +1,29 @@
 import React from 'react';
+import {useRef} from "react";
 import Testimonials from '../Components/Testimonials';
 import bannerVid from '../assets/video2.mp4';
 
 const Home = () => {
+    const introduction = useRef(null);
+
+    const scrollToSection = (elementRef) =>{
+      window.scroll({
+        top: elementRef.current.offsetTop,
+        behavior: 'smooth',
+      });
+    };
   return (
     <div className='home-page'>
        
       <div className='container-fluid banner'>
             <div className="content">
               <h1>HAK foodblog</h1>
-              <button className='start-btn'>Get started</button>
+              <button onClick={() => scrollToSection(introduction)} type="button" className='start-btn' >View Recipies</button>
               
             </div>
           <video src={bannerVid} autoPlay  loop muted />
         <div>
-          <div className="wrapper intruduction">
+          <div ref={introduction}  className="wrapper intruduction" id='introduction'>
             <h1> this is an intruduction to our site</h1>
               <p>
               rovide a valid href, but still need the element to resemble a link, use a button and change 
@@ -24,10 +33,10 @@ const Home = () => {
         </div>
       </div>
 
-      <header classNameName="blog-header">
-        <div classNameName="container">
+      <header className="blog-header" >
+        <div className="container">
           <div className="nav-scroller py-1 mb-2">
-            <nav className="nav nav-menu d-flex justify-content-between mx-5">
+            <nav className="nav nav-menu d-flex  justify-content-between mx-5">
               <a className="p-2 link-secondary" href="#">Menu</a>
               <a className="p-2 link-secondary" href="#">Chicken</a>
               <a className="p-2 link-secondary" href="#">Pork</a>
@@ -35,7 +44,7 @@ const Home = () => {
               <a className="p-2 link-secondary" href="#">Pork</a>
               <a className="p-2 link-secondary" href="#">Vegetables</a>
               <a className="p-2 link-secondary" href="#">Desserts</a>
-              <a className="p-2 link-secondary" href="#">Travel Food</a>
+              <a className="p-2 link-secondary" href="#">Food Destinations</a>
             </nav>
           </div>
         </div>

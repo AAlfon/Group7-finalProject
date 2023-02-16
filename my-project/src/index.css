@@ -8,7 +8,7 @@
 }
 
 body {
-  background-color: whitesmoke;
+  background-color: #f0eaea;
   
 }
 
@@ -21,6 +21,7 @@ h1 {
 .blog-header {
     line-height: 1;
     border-bottom: 1px solid #e5e5e5;
+    background-color: #262626;
   }
   
   .blog-header-logo {
@@ -47,13 +48,13 @@ h1 {
     font-size: 20px;
     gap: 25px;
     padding: 5px 20px;
+    background: rgb(251,176,70);
+    background: linear-gradient(212deg, rgba(251,176,70,0.5466561624649859) 0%, rgba(0,0,0,0.7483368347338936) 50%, rgba(115,115,115,0.4906337535014006) 100%);
   }
   .nav-link {
     color: goldenrod;
   }
-  .navbar-dark{
-    background-color: #262626 !important;
-  }
+  
   
   .nav-scroller {
     position: relative;
@@ -174,6 +175,9 @@ h1 {
       width: 105px;
     }
   }
+/* menu */
+
+
 
   /* Image Gallery */
 
@@ -201,14 +205,17 @@ h1 {
   flex-direction: column;
   align-items: center;
   justify-content: center;
-  background-color: rgba(0,0,0,0.3);
+  background-color: rgba(0,0,0,0.2);
 }
 
 .content h1 {
   font-size: 50px;
+  font-weight: 600;
   color: gold;
   text-transform: uppercase;
   margin-bottom: 15px;
+  text-shadow: 0px -1px 13px rgba(0,0,0,10);
+  border-bottom: 2mm ridge rgba(234, 231, 83, 0.6);
   
 }
 
@@ -286,14 +293,17 @@ h1 {
     right: 0;
 }
 
-  
+  .carousel-item {
+    width: 100%;
+  }
   
   /*
    * Footer
    */
   
    footer {
-    background: #101010;
+    background: rgb(152,152,152);
+    background: linear-gradient(212deg, rgba(152,152,152,1) 0%, rgba(0,0,0,1) 50%, rgba(252,176,69,0.4906337535014006) 100%);
     padding: 86px 0;
   }
 
@@ -360,15 +370,15 @@ section {
 	display: grid;
 	place-items: center;
 	height: 100vh;
+  width: 100%;
 }
 
 .section-header{
+    padding-top: 150px;
     position: relative;
-    padding-bottom: 10px;
     text-align: center;
     font-weight: 800;
-    padding-bottom: 20px;
-    color: red;
+    color: goldenrod;
 }
 
 .section-header:after{
@@ -433,7 +443,7 @@ section {
 }
 
 .carousel-control-next-icon, .carousel-control-prev-icon {
-	background-color: blue;
+	background-color: black;
 }
 
 /* About Us */
@@ -603,7 +613,8 @@ color: #262626;
 }
 
 .left {
-	background: blue;
+	background: rgb(152,152,152);
+  background: linear-gradient(212deg, rgba(152,152,152,1) 0%, rgba(0,0,0,1) 50%, rgba(252,176,69,0.4906337535014006) 100%);
 	padding: 160px 58px;
 }
 .left h2 {
