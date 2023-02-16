@@ -14,7 +14,7 @@ import logo1 from '../assets/logo.png'
 const Navbar = () => {
     return (
         <div>
-        <nav className="navbar navbar-dark fixed-top navbar-expand-lg">
+        <nav className="navbar fixed-top navbar-expand-lg">
   <Link to="/" className="navbar-brand">
    <img src={logo1} alt="" width="100" height="100" class="d-inline-block align-text-top" />
   </Link>

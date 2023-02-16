@@ -10,7 +10,7 @@ const Contact = () => {
             <div class="row single-form g-0">
                 <div class="col-sm-12 col-lg-6">
                     <div class="left">
-                        <h2><span>Want to know more about your favorite food?</span> <br />Contact us now!</h2>
+                        <h2><span>Lets talk about your favorite food</span> <br />Contact us now!</h2>
                     </div>
                 </div>
                 <div class="col-sm-12 col-lg-6">
