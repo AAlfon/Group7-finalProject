@@ -17,7 +17,7 @@ const Home = () => {
       <div className="content">
       <h1>HAK  Filipino foodblog</h1>
          {/* button link */}
-         <a href="./#introduction"><button className='btn start-btn'>View Recipies</button></a>
+         <a href="./#introduction"><button className='btn start-btn'>Click to View Recipies</button></a>
      </div>
      
 
@@ -27,7 +27,7 @@ const Home = () => {
 
 
       <main className="container my-5">
-        <h1 className="section-header">Categories</h1>
+        <h1 className="section-header titles1">Categories</h1>
         <header ref={introduction} className="blog-header intruduction">
         <div className="container-fluid">
           <div className="nav-scroller py-1 mb-2">
@@ -120,14 +120,14 @@ const Home = () => {
         </div>
 
         <div className="container">
-          <h2 className="section-header">Food Recipes</h2>
+          <h2 className="section-header titles">Food Recipes</h2>
           <div className="main-content">
             <div className="box">
               <img src="https://i.pinimg.com/736x/6c/52/81/6c528187700fb46afda2b184e7fc11ae.jpg" alt="" />
               <div className="img-text">
                 <div className="content">
                   <h2>Food 1</h2>
-                  <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quam assumenda nulla aspernatur enim ut, minima.</p>
+                  <p>Lorem ietur adipisicing elit. Quam assumenda nulla aspernatur enim ut, minima.</p>
                 </div>
               </div>
             </div>

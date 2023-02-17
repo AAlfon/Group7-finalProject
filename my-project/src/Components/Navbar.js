@@ -47,10 +47,11 @@ const Navbar = () => {
             <Link to="/contact-us" className="nav-link">Contact Us</Link>
             </li>
             <li className="nav-item">
-              <Link to="/about" className="nav-link">About Us</Link>
+              <Link to="/travel" className="nav-link" >Food Destinations</Link>
+              
             </li>
             <li className="nav-item">
-              <Link to="/travel" className="nav-link" >Food Destinations</Link>
+              <Link to="/about" className="nav-link">About Us</Link>
             </li>
           </ul>
   </div>

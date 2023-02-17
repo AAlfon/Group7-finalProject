@@ -10,7 +10,7 @@ const Footer = () => {
                     <div className="single-box">
                         <img src="img/logo.png" alt="" />
                     <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Quam repellendus sunt praesentium aspernatur iure molestias.</p>
-                    <h3>We Accect</h3>
+                    <h3>We Accept donations</h3>
                     <div className="card-area">
                             <i className="fa fa-cc-visa"></i>
                             <i className="fa fa-credit-card"></i>

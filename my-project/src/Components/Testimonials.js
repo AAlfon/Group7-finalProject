@@ -4,7 +4,7 @@ const Testimonials = () => {
     return (
         <div>
     <section>
-            <h1 className="section-header">Testimonials</h1>
+            <h1 className="section-header titles">Testimonials</h1>
             <div className="testimonials">
             <div className="container-fluid">
                 <div id="carouselExampleAutoplaying" className="carousel slide" data-bs-ride="carousel">
