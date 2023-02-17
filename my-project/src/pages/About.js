@@ -3,7 +3,14 @@ import React from 'react';
 const About = () => {
     return (
         <div className='about-page'>
-            <h1 className='section-header'>Sample About Us Page</h1>
+            <h1 className='section-header'>Know something about us </h1>
+          
+          <div className='about-us'>
+          <p>
+            We're passionate about food and cooking, and we believe that everyone should have access to tasty and nutritious meals. That's why we've created this website, where we share our favorite recipes with you.
+            </p>
+
+          </div>
     <div className="team-area">
   <div className="container">
     <div className="row g-5">

@@ -11,7 +11,7 @@ const Navbar = () => {
   const changeBackground = () => {
     console.log(window.scrollY)
     if (window.scrollY >= 80) {
-      setChange('blue')
+      setChange('#876e4a')
       setlogoHeight(70)
     } else {
       setChange('transparent')
@@ -28,7 +28,7 @@ const Navbar = () => {
       <div>
         <nav className="navbar fixed-top navbar-expand-lg" style={{backgroundColor: change, transition: "all 1s"}}>
         <Link to="/" className="navbar-brand">
-        <img src={logo1} alt="" width="100" style={{height: logoHeight, transition: "all 1s"}} class="d-inline-block align-text-top" />
+        <img src={logo1} alt="" width="100" style={{height: logoHeight, transition: "all 1s"}} className="logo d-inline-block align-text-top" />
         </Link>
         <button className="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
           <span className="navbar-toggler-icon"></span>

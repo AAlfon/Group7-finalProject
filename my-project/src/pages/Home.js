@@ -15,25 +15,20 @@ const Home = () => {
       </video>
 
       <div className="content">
-      <h1>HAK foodblog</h1>
+      <h1>HAK  Filipino foodblog</h1>
          {/* button link */}
          <a href="./#introduction"><button className='btn start-btn'>View Recipies</button></a>
      </div>
      
-     <div id='introduction'>
-    <div ref={introduction} className="wrapper introduction" >
-            <h1> this is an introduction to our site</h1>
-            <p>
-              rovide a valid href, but still need the element to resemble a link, use a button and change
-              it with appropriate,  rovide a valid href, but still need the element to resemble a link, use a button and change
-              it with appropriate.
-            </p>
-          </div>
-          </div>
 
      
-<div>
-      <header className="blog-header">
+<div id='introduction'>
+    
+
+
+      <main className="container my-5">
+        <h1 className="section-header">Categories</h1>
+        <header ref={introduction} className="blog-header intruduction">
         <div className="container-fluid">
           <div className="nav-scroller py-1 mb-2">
             <nav className="nav nav-menu d-flex  justify-content-between mx-5">
@@ -49,10 +44,6 @@ const Home = () => {
           </div>
         </div>
       </header>
-
-
-      <main className="container my-5">
-        <h1 className="section-header">Featured Foods</h1>
         <div className="row mb-2">
           <div className="col-md-6">
             <div className="row g-0 border rounded overflow-hidden flex-md-row mb-4 shadow-sm h-md-250 position-relative">

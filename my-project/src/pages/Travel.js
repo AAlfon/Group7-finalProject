@@ -3,7 +3,7 @@ import React from 'react';
 const Travel = () => {
     return (
         <div className='travel-page'>
-        <h2 className='section-header'>Best Places to Visit <br></br>for Food Travel</h2>
+        <h2 className='section-header'>Travel for Food</h2>
 
         <div className="products">
         <div className="container fluid">
