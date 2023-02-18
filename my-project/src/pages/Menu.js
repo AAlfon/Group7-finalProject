@@ -3,7 +3,7 @@ import React from 'react';
 const Menu = () => {
     return (
         <div className='menu-page'>
-            <h1 className='section-header'>Comon filipino Recipies
+            <h1 className='section-header'>All time favorites
             </h1>
             <main>
 

@@ -8,8 +8,9 @@ const About = () => {
               <div class="row">
                 <div class="col align-self-start">
                   <h3>
-                    who are we?
+                    Who are we?
                   </h3>
+                  <br/>
                  <p>
                  We're a group of people passionate about food and cooking, and we believe that everyone should have access to tasty and nutritious meals. That's why we've created this website, where we share our favorite recipes with you.
                  </p>
