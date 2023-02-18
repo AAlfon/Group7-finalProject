@@ -22,13 +22,11 @@ const Home = () => {
      
 
      
-<div id='introduction'>
+<div  >
     
-
-
       <main className="container my-5">
-        <h1 className="section-header titles1">Categories</h1>
-        <header ref={introduction} className="blog-header intruduction">
+        <h1 className="section-header  titles1" id='introduction' ref={introduction}>Categories</h1>
+        <header  className="blog-header intruduction">
         <div className="container-fluid">
           <div className="nav-scroller py-1 mb-2">
             <nav className="nav nav-menu d-flex  justify-content-between mx-5">

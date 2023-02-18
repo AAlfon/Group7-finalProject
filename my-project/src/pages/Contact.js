@@ -3,7 +3,7 @@ import React from 'react';
 const Contact = () => {
     return (
         <div className='contact-page'>
-            <h1 className='section-header'>Sample Contact Us Page</h1>
+            <h1 className='section-header'> Contact Us</h1>
 
         <div class="form-area mb-5">
         <div class="container">
