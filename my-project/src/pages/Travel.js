@@ -12,7 +12,7 @@ const Travel = () => {
                   <div className="card">
                     <img src="https://pbs.twimg.com/media/C3UqzZ4WMAAe1DG.jpg" className="card-img-top" alt="Product 1" />
                     <div className="card-body">
-                      <h5 className="card-title">Product Name (Place) </h5>
+                      <h5 className="card-title">bulalo (tagaytay) </h5>
                       <p className="card-text">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Inventore ad unde maxime sed quaerat harum recusandae beatae. Minus, totam. Fugit, ratione aliquid reiciendis autem fuga suscipit similique ad quo animi est? Omnis facere, quibusdam ipsa consequatur animi molestiae, officiis reiciendis sint vel at veritatis, voluptate natus id nihil laudantium expedita.</p>
                       <div className="d-flex justify-content-between align-items-center">
                         <div className="btn-group">
