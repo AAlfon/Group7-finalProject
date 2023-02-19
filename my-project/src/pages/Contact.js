@@ -16,18 +16,18 @@ const Contact = () => {
                 <div class="col-sm-12 col-lg-6">
                     <div class="right">
                        <i class="fa fa-caret-left"></i>
-                        <form>
+                       <form action="https://formspree.io/f/mwkjpdvb" method="POST">
                           <div class="mb-3">
-                            <label for="exampleInputEmail1" class="form-label">Your Name</label>
-                            <input type="text" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" />
+                            <label > Your Name</label>
+                            <input type="text" name="name" required aria-describedby="emailHelp" />
                           </div>
                           <div class="mb-3">
-                            <label for="exampleInputEmail1" class="form-label">Email address</label>
-                            <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" />
+                            <label for="email" name="email">Email address</label>
+                            <input type="email" name="email" required aria-describedby="emailHelp" />
                           </div>
                           <div class="mb-3">
-                            <label for="exampleInputPassword1" class="form-label">Message</label>
-                              <textarea type="password" class="form-control" id="exampleInputPassword1"></textarea>
+                            <label for="message" >Message</label>
+                              <textarea type="message" required ></textarea>
                           </div>
                           <button type="submit" class="btn btn-primary">Submit</button>
                         </form>
