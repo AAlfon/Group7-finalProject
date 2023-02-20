@@ -192,6 +192,7 @@ body {
   flex-direction: column;
   align-items: center;
   justify-content: center;
+  color: #000;
 }
 
 .content h1 {
@@ -418,8 +419,9 @@ section {
 	border: 2mm ridge rgb(237, 220, 172);
 }
 
-.content{
+.content1{
     font-size: 18px;
+    color: #000;
 }
 
 .content p {
