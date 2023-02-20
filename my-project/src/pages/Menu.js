@@ -47,14 +47,15 @@ const Menu = () => {
           If you're trying it for the first time, you're about to discover an amazing dish that your family will want over and over again.</p>
           <h6>Recipies:</h6>
           <ul>
-            <li></li>
-            <li></li>
-            <li></li>
-            <li></li>
-            <li></li>
-            <li></li>
-            <li></li>
-            <li></li>
+            <li>2 Tbsp oil</li>
+            <li>2 Tbsp ginger, cut into strips</li>
+            <li>2 Tbsp garlic, crushed</li>
+            <li>1/2 cup onion, white, sliced</li>
+            <li>750 g chicken, parts, cut into serving portions</li>
+            <li>2 1/2 Tbsp patis</li>
+            <li>1/2 tsp peppercorn, black</li>
+            <li>1/4 cup bell pepper, red, cut into cubes</li>
+            <li>2/3 cup milk, evaporated</li>
           </ul>
       </div>
       <div className="col-md-5">
@@ -67,22 +68,19 @@ const Menu = () => {
 
     <div className="row featurette">
       <div className="col-md-7 order-md-2">
-        <h2 className="featurette-heading">Oh yeah, it’s that good. <span className="text-muted">See for yourself.</span></h2>
-        <p className="lead">Another featurette? Of course. More placeholder content here to give you an idea of how this layout would work with some actual real-world content in place.</p>
+        <h2 className="featurette-heading">Traditional Bistek<span className="text-muted"></span></h2>
+        <p className="lead">The traditional bistek dish, which means beef steak in Filipino, is a local adaptation of the Spanish bistec made of thin slices of beef cooked with onions and spices. 
+        However, the term has evolved in recent years to describe not only beef but also any meat or fish stewed in soy sauce, calamansi juice, and onions.</p>
         <h6>Recipies:</h6>
         <ul>
-            <li></li>
-            <li></li>
-            <li></li>
-            <li></li>
-            <li></li>
-            <li></li>
-            <li></li>
-            <li></li>
+            <li>Pork– you can use pork chops, thinly sliced pork butt, or sirloin. Cut the meat across the grain for a more tender chew.</li> 
+            <li>Calamansi fruits– fresh is best but frozen or bottled varieties are also good options. Make sure they’re pure calamansi juice, as the ones with sugar added are for making juices and not cooking. 
+                In a pinch, you can substitute lemon or lime juice.
+                </li>        
           </ul>
       </div>
       <div className="col-md-5 order-md-1">
-      <img src="https://www.lutongbahayrecipe.com/wp-content/uploads/2019/03/pork-chicken-adobo-lutong-bahay-640x381.jpg" className="d-block w-100" alt="..." />
+      <img src="https://i0.wp.com/yummyfood.ph/wp-content/uploads/2021/08/Pork-Steak-Recipe.jpg?w=768&ssl=1" className="d-block w-100" alt="..." />
 
       </div>
     </div>
