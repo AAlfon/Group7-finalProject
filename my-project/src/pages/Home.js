@@ -129,7 +129,7 @@ const Home = () => {
                 <div className="content1">
                   <h2>Pork Sinigang</h2>
                   <p>Origin: Luzon</p>
-                  Sinigang is a Filipino soup or stew characterized by its sour and savory taste.                  
+                  <p>Sinigang is a Filipino soup or stew characterized by its sour and savory taste.</p>               
                 </div>
               </div>
             </div>
@@ -139,7 +139,7 @@ const Home = () => {
                 <div className="content1">
                   <h2>Vegetarian Sisig</h2>
                   <p>Origin: Luzon - Pampanga</p>
-                  This version is of course free from any animal products and by-products and is 100% vegan.               
+                  <p>This version is of course free from any animal products and by-products and is 100% vegan. </p>              
                 </div>
               </div>
             </div>
@@ -149,8 +149,8 @@ const Home = () => {
                 <div className="content1">
                   <h2>Pakbet</h2>
                   <p>Origin: Luzon - Ilocos</p>
-                  Pinakbet originated in the region of Ilocos. 
-                  The word pinakbet is derived from the Ilocano word pinakebbet, meaning “shrunk” or “shrivelled”. 
+                  <p>Pinakbet originated in the region of Ilocos. 
+                  The word pinakbet is derived from the Ilocano word pinakebbet, meaning “shrunk” or “shrivelled”.</p>
                 </div>
               </div>
             </div>
@@ -161,8 +161,8 @@ const Home = () => {
                 <div className="content1">
                   <h2>Lechon</h2>
                   <p>Origin: Philippines</p>
-                  While roasting pigs already existed in the Philippines before the Spanish arrived, 
-                  it was the Spaniards who labeled the process of roasting a whole pig, lechon.
+                  <p>While roasting pigs already existed in the Philippines before the Spanish arrived, 
+                  it was the Spaniards who labeled the process of roasting a whole pig, lechon.</p>
                 </div>
               </div>
             </div>
@@ -172,7 +172,7 @@ const Home = () => {
                 <div className="content1">
                   <h2>Bachoy</h2>
                   <p>Origin: La Paz, Iloilo City</p>
-                  Batchoy, alternatively spelled batsoy, is a Filipino noodle soup of pork offal, crushed pork cracklings, chicken stock, beef loin and round noodles.
+                  <p>Batchoy, alternatively spelled batsoy, is a Filipino noodle soup of pork offal, crushed pork cracklings, chicken stock, beef loin and round noodles.</p>
                 </div>
               </div>
             </div>
@@ -182,7 +182,7 @@ const Home = () => {
                 <div className="content1">
                   <h2>Sutokil</h2>
                   <p>Origin: Visayas - Cebu</p>
-                  It is an abbreviation for the most popular cooking techniques on the island, namely Sugba (grill), Tuwa (stew), and Kilaw (cooked raw with vinegar).
+                  <p>It is an abbreviation for the most popular cooking techniques on the island, namely Sugba (grill), Tuwa (stew), and Kilaw (cooked raw with vinegar).</p>
                 </div>
               </div>
             </div>
@@ -193,7 +193,7 @@ const Home = () => {
                 <div className="content1">
                   <h2>Piyanggang Manok</h2>
                   <p>Origin: Sulu and Mindanao</p>
-                  The dish is characteristically black in color. The chicken may also be grilled before adding the marinade. It is a type of ginataan.
+                  <p>The dish is characteristically black in color. The chicken may also be grilled before adding the marinade. It is a type of ginataan.</p>
                 </div>
               </div>
             </div>
