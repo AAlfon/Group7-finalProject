@@ -127,14 +127,9 @@ const Home = () => {
               <img src="https://homefoodie.com/uploads/2020/3/Pork%20Sinigang_00A0255.jpg" alt="" />
               <div className="img-text">
                 <div className="content1">
-                  <h2>Pork Sinigang Recipe</h2>
-                  <p>Ingredients:</p>
-                  <ul>
-                    <li>5 cups rice washing or water</li>
-                    <li>1 kg. sliced pork pata</li>
-                    <li>1 pc. medium onion (sliced)</li>
-                    <li>2 pcs. medium tomato (sliced)</li>                                       
-                  </ul>
+                  <h2>Pork Sinigang</h2>
+                  <p>Origin: Luzon</p>
+                  Sinigang is a Filipino soup or stew characterized by its sour and savory taste.                  
                 </div>
               </div>
             </div>
@@ -143,14 +138,8 @@ const Home = () => {
               <div className="img-text">
                 <div className="content1">
                   <h2>Vegetarian Sisig</h2>
-                  <p>Ingredients:</p>
-                  <ul>
-                    <li>200.0g Lady's Choice Real Mayonnaise 5.5L
-                        /50.0ml Knorr Liquid Seasoning 3.8L
-                        /50.0g Calamansi Juice
-                        /20.0ml Vinegar
-                        /1.0g Black Pepper, ground</li>                   
-                  </ul>
+                  <p>Origin: Luzon - Pampanga</p>
+                  This version is of course free from any animal products and by-products and is 100% vegan.               
                 </div>
               </div>
             </div>
@@ -159,14 +148,9 @@ const Home = () => {
               <div className="img-text">
                 <div className="content1">
                   <h2>Pakbet</h2>
-                  <p>Ingredients:</p>
-                  <ul>
-                    <li>4 pieces round eggplant cut in half
-                        /2 pieces small bitter melon ampalaya, quartered
-                        /½ bundle string beans cut into 2 inch length
-                        /1 piece sweet potato kamote, quartered
-                      </li>                    
-                  </ul>
+                  <p>Origin: Luzon - Ilocos</p>
+                  Pinakbet originated in the region of Ilocos. 
+                  The word pinakbet is derived from the Ilocano word pinakebbet, meaning “shrunk” or “shrivelled”. 
                 </div>
               </div>
             </div>
@@ -176,15 +160,9 @@ const Home = () => {
               <div className="img-text">
                 <div className="content1">
                   <h2>Lechon</h2>
-                  <p>Ingredients:</p>
-                  <ul>
-                    <li>Whole pig
-                        /20 garlic cloves
-                        /1 bunch cilantro, trimmed
-                        /1 cup loosely packed fresh oregano leaves
-                        /5 tablespoons kosher salt
-                    </li>                    
-                  </ul>
+                  <p>Origin: Philippines</p>
+                  While roasting pigs already existed in the Philippines before the Spanish arrived, 
+                  it was the Spaniards who labeled the process of roasting a whole pig, lechon.
                 </div>
               </div>
             </div>
@@ -193,14 +171,8 @@ const Home = () => {
               <div className="img-text">
                 <div className="content1">
                   <h2>Bachoy</h2>
-                  <p>Ingredients:</p>
-                  <ul>
-                    <li>1 lb miki noodles boiled for 1 minute and drained
-                        1 lb pork
-                        1 lb pig's intentesines; cleaned boiled, and sliced
-                        1/4 lb pig liver sliced into strips
-                      </li>                    
-                  </ul>
+                  <p>Origin: La Paz, Iloilo City</p>
+                  Batchoy, alternatively spelled batsoy, is a Filipino noodle soup of pork offal, crushed pork cracklings, chicken stock, beef loin and round noodles.
                 </div>
               </div>
             </div>
@@ -209,13 +181,8 @@ const Home = () => {
               <div className="img-text">
                 <div className="content1">
                   <h2>Sutokil</h2>
-                  <p>Ingredients:</p>
-                  <ul>
-                    <li>Sutokil which stands for the verbs sugba 
-                        (to grill), tola (to cook a fish/chicken-veggie soup dish) and kilaw 
-                        (to prepare raw fish marinated in vinegar and spices).                                               
-                      </li>                    
-                  </ul>
+                  <p>Origin: Visayas - Cebu</p>
+                  It is an abbreviation for the most popular cooking techniques on the island, namely Sugba (grill), Tuwa (stew), and Kilaw (cooked raw with vinegar).
                 </div>
               </div>
             </div>
@@ -225,12 +192,8 @@ const Home = () => {
               <div className="img-text">
                 <div className="content1">
                   <h2>Piyanggang Manok</h2>
-                  <p>Ingredients:</p>
-                  <ul>
-                    <li>4 large bone-in chicken thighs
-                        2 whole coconuts, green husks removed
-                      </li>                   
-                  </ul>
+                  <p>Origin: Sulu and Mindanao</p>
+                  The dish is characteristically black in color. The chicken may also be grilled before adding the marinade. It is a type of ginataan.
                 </div>
               </div>
             </div>
@@ -239,15 +202,8 @@ const Home = () => {
               <div className="img-text">
                 <div className="content1">
                   <h2>Inihaw na Panga</h2>
-                  <p>Ingredients:</p>
-                  <ul>
-                    <li>2 kg Large Fish (Tuna, Hapuka, Grouper) Jaw
-                        1/2 cup soy sauce
-                        juice from 1 lemon
-                        salt
-                        freshly ground black pepper
-                      </li>                    
-                  </ul>
+                  <p>Origin:Mindanao - General Santos and Davao City</p>
+                  Inihaw na Panga Tuna (Grilled Tuna Jaw) · It's the uniquely Filipino sweet-savory basting sauce that complements the smoky flavors of this grilled tuna jaw.
                 </div>
               </div>
             </div>
@@ -255,15 +211,10 @@ const Home = () => {
               <img src="http://1.bp.blogspot.com/-aKDtr3h7HNg/TbrNWJh1OxI/AAAAAAAAAR0/4wJ0xHxYHjA/s1600/hinalang.JPG" alt="" />
               <div className="img-text">
                 <div className="content1">
-                  <h2>Food 6</h2>
-                  <p>Ingredients:</p>
-                  <ul>
-                    <li>2 lbs Beef cut into strips.
-                        1 ½ cup Beef stock.
-                        ¾ cup Spring onions cut into 1-inch long.
-                        6 pcs Green chilies cut into ½-inch long.
-                      </li>                    
-                  </ul>
+                  <h2>Beef Halang-halang</h2>
+                  <p>Origin: Mindanao</p>
+                  Considered comfort food among locals, hinalang is a spicier version of nilagang baka. Enjoy it after a long, hard day at work.
+                  
                 </div>
               </div>
             </div>
