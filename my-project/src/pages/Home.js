@@ -33,7 +33,7 @@ const Home = () => {
               <a className="p-2 link-secondary" href="#">Chicken</a>
               <a className="p-2 link-secondary" href="#">Pork</a>
               <a className="p-2 link-secondary" href="#">Beef</a>
-              <a className="p-2 link-secondary" href="#">Pork</a>
+              <a className="p-2 link-secondary" href="#">Fish</a>
               <a className="p-2 link-secondary" href="#">Vegetables</a>
               <a className="p-2 link-secondary" href="#">Desserts</a>
               <a className="p-2 link-secondary" href="#">Food Destinations</a>
