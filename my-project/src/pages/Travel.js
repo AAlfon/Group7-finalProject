@@ -74,7 +74,7 @@ const Travel = () => {
                       <p className="card-text">This Cebuano dish was inherited from the Spaniards a long time ago. 
                       But there are also other versions in other provinces like Cagayan de Oro, Bohol and Davao. 
                       Imagine, cooking a dish for almost a day makes you wonder what kind of dish that took so long to cook. 
-                      The average cooking time for this dish is about seven hours. The name of this dish "balbacua" came from the Spanish word "barbacoa" which means cooking meat very slowly on an open fire for several hours.
+                      The average cooking time for this dish is about seven hours. Spanish word "barbacoa" which means cooking meat very slowly on an open fire for several hours.
                       </p>
                       <div className="d-flex justify-content-between align-items-center">
                         <div className="btn-group">
@@ -102,10 +102,10 @@ const Travel = () => {
                 </div>
                 <div className="col-lg-4">
                   <div className="card">
-                    <img src="https://pbs.twimg.com/media/C3UqzZ4WMAAe1DG.jpg" className="card-img-top" alt="Product 3" />
+                    <img src="http://1.bp.blogspot.com/-aKDtr3h7HNg/TbrNWJh1OxI/AAAAAAAAAR0/4wJ0xHxYHjA/s1600/hinalang.JPG" className="card-img-top" alt="Product 3" />
                     <div className="card-body">
-                      <h5 className="card-title">Product Name (Place)</h5>
-                      <p className="card-text">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Inventore ad unde maxime sed quaerat harum recusandae beatae. Minus, totam. Fugit, ratione aliquid reiciendis autem fuga suscipit similique ad quo animi est? Omnis facere, quibusdam ipsa consequatur animi molestiae, officiis reiciendis sint vel at veritatis, voluptate natus id nihil laudantium expedita.</p>
+                      <h5 className="card-title">Beef Halang-halang (Mindanao)</h5>
+                      <p className="card-text">Hinalang, just the name alone sounds hot and spicy because it is. “Halang” in Visayan means Hot or Spicy and this is what this dish is all about, a close relative to the Nilagang Baka .</p>
                       <div className="d-flex justify-content-between align-items-center">
                         <div className="btn-group">
                           <button type="button" className="btn btn-sm view-more">View more...</button>
