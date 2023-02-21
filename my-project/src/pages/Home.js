@@ -41,7 +41,7 @@ const Home = () => {
           </div>
         </div>
       </header>
-        <div className="row mb-2">
+        {/* <div className="row mb-2">
           <div className="col-md-6">
             <div className="row g-0 border rounded overflow-hidden flex-md-row mb-4 shadow-sm h-md-250 position-relative">
               <div className="col p-4 d-flex flex-column position-static">
@@ -102,7 +102,7 @@ const Home = () => {
               </div>
             </div>
           </div>
-        </div>
+        </div> */}
 
         <div className="p-4 p-md-5 mb-4 text-white rounded bg-dark">
           <div className='row'>

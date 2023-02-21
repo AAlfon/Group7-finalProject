@@ -39,7 +39,7 @@ const About = () => {
             </div>
           </div>
           <div className="img-text">
-            <h4>John Doe</h4>
+            <h4>Alexander Alfon</h4>
             <h5>Front-End Developer</h5>
           </div>
         </div>
@@ -58,7 +58,7 @@ const About = () => {
             </div>
           </div>
           <div className="img-text">
-            <h4>Dave Wood</h4>
+            <h4>Archimides Aquino</h4>
             <h5>Back-End Developer</h5>
           </div>
         </div>
@@ -77,7 +77,7 @@ const About = () => {
             </div>
           </div>
           <div className="img-text">
-            <h4>Claire Chedd</h4>
+            <h4>Hilario Pabalate</h4>
             <h5>Back-End Developer</h5>
           </div>
         </div>
@@ -102,7 +102,7 @@ const About = () => {
             </div>
           </div>
           <div className="img-text">
-            <h4>John Doe</h4>
+            <h4>Kent Joel Quinones</h4>
             <h5>Front-End Developer</h5>
           </div>
         </div>
@@ -123,7 +123,7 @@ const About = () => {
             </div>
           </div>
           <div className="img-text">
-            <h4>Dave Wood</h4>
+            <h4>Alma Cleto</h4>
             <h5>Back-End Developer</h5>
           </div>
         </div>
