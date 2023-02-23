@@ -11,29 +11,69 @@ html {
   scroll-behavior: smooth;
 }
 
+.registerForm {
+  padding: 10px;
+  margin-top: 100px;
+
+}
+
+div.sticky {
+  margin-top: 50px;
+  padding-top: 120px;
+  position: -webkit-sticky;
+  position: sticky;
+  top: 0;
+}
+
+.admin-form {
+  margin-top: 50px;
+  padding: 10px;
+  background-color: goldenrod;
+}
+
+.editor {
+  overflow-y: auto;
+  max-height: 600px;
+}
+
 body {
   background-color: #f0eaea;
+}
+
+.single-post {
+  background-color: whitesmoke;
+  box-shadow: #111;
+  margin: 20px auto;
+}
+
+h1 {
+  border-bottom: goldenrod 2px solid;
   
 }
 
+#menus {
+  margin-top: 500px;
+}
 
-
+button {
+  background-color: goldenrod;
+  border-radius: 10px;
+  font-size: 1em;
+  border: none;
+  padding: 5px;
+  border-style: groove;
+  margin: 10px;
+}
 
 .blog-header {
     line-height: 1;
-    background-color: #262626;
-    
-    border-radius: 10px;
-    justify-items: center;
-    margin-bottom: 50px;
+    font-size: 1.5em;
+    background-color: goldenrod;
+    color: white;
   }
 
-
-  .blog-header nav a {
-    text-decoration: none;
-    font-weight: 600;
-    font-size: 20px;
-  
+  .menu-link {
+    color: white;
   }
   
   .blog-header-logo {
@@ -45,7 +85,10 @@ body {
     text-decoration: none;
   }
   
- 
+  #introduction {
+    margin: 100px auto;
+
+  }
  
   
   .display-4 {
@@ -56,30 +99,12 @@ body {
       font-size: 3rem;
     }
   }
-  .logo {
-    border-radius: 50px;
-  }
   .navbar {
     font-weight: 600;
     font-size: 20px;
-    padding: 5px 20px;
    
   }
-  
- 
-  .nav-link {
-    color: goldenrod;
-  }
 
-  .nav-link:hover {
-    color: gold;
-  }
-  .nav-link:focus {
-    color:gold;
-  }
-  
-  
-  
   .nav-scroller {
     position: relative;
     z-index: 2;
@@ -121,8 +146,6 @@ body {
   /* Banner */
   
   .banner video {
-    /* for oberservation edit*/
-
     height: 100vh;
     width: 100%;
     padding: 0;
@@ -174,11 +197,10 @@ body {
 
 .section-header{
     text-transform: uppercase;
-    line-height:20px;
+    line-height: 70px;
     padding-bottom: 30px;
     font-size: 50px;
-    background: rgb(255,190,98);
-    background: linear-gradient(212deg, rgba(255,190,98,0.5802696078431373) 0%, rgba(3,3,3,0.7399334733893557) 50%, rgba(115,115,115,0.4906337535014006) 100%);
+    color: black;
     letter-spacing: 2px; 
 }
 
@@ -186,8 +208,8 @@ body {
   position: absolute;
   top: 0;
   left: 0;
-  height: 100vh;
   width: 100%;
+  height: 100%;
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -202,17 +224,15 @@ body {
   text-transform: uppercase;
   margin-bottom: 15px;
   text-shadow: 0px -1px 13px rgba(0,0,0,10);
-  
+  border-bottom: 2mm ridge rgba(234, 231, 83, 0.6);
   
 }
 
 .start-btn {
   color: goldenrod;
-  font-size: 20px;
-  font-weight: 600;
   padding: 20px;
   border-radius: 10px;
-  background-color: rgba(0, 0, 0, 0.50);
+  background-color: rgba(0, 0, 0, 0.15);
 }
 .content button:hover {
       background-color: goldenrod;
@@ -297,7 +317,7 @@ body {
   }
 
   .back-arrow {
-    color:rgb(152,152,152) ;
+    color: red;
     font-size: 20px
   }
 
@@ -362,22 +382,12 @@ section {
   width: 100%;
 }
 
-
 .section-header{
-    padding-top: 100px;
+    padding-top: 150px;
     position: relative;
     text-align: center;
     font-weight: 800;
     color: goldenrod;
-}
-.titles{
-  padding: 50px;
-  border-radius: 40px;
-}
-.titles1{
-  padding: 50px;
-  border-radius: 10px;
-  margin-bottom: 0px;
 }
 
 .section-header:after{
@@ -416,7 +426,7 @@ section {
 	height: 200px;
 	width: 200px;
 	border-radius: 50%;
-	border: 2mm ridge rgb(237, 220, 172);
+	border: 7px solid blue;
 }
 
 .content1{
@@ -452,24 +462,9 @@ section {
 }
 
 /* About Us */
-    .about-us {
-      align-items: center;
-      font-size: 25px;
-      font-weight: 600;
-      /* text-shadow: 5px 0px 5px rgba(0,0,0,0.65); */
-      justify-content: center;
-      color: #111;
-      padding-top:50px;
-      height:20em;
-      width: 50%;
-    }
 
-    .about-us h3{
-        font-size: 40px;
-        font-weight: 600;
-    }
 .team-area{
-  padding-top: 5%;
+  padding-top: 10%;
 }
 .single-team{
   background-color: #000;
@@ -663,35 +658,6 @@ color: #262626;
 .form-control {
 	border: 2px solid #000;
 }
-form {
-  display: flex;
-  flex-direction: column;
-  align-items: flex-start;
-}
-
-label {
-  display: inline-block;
-  width: 100%;
-  max-width: 300px;
-  font-weight: bold;
-}
-
-input[type="text"],
-input[type="email"],
-textarea {
-  width: 100%;
-  padding: 8px;
-  border: 1px solid black;
-  border-radius: 4px;
-  box-sizing: border-box;
-  margin-top: 8px;
-  margin-bottom: 16px;
-  
-}
-textarea {
-  font-weight: bold;
-}
-
 .right button {
 	border: none;
 	border-radius: 0;
