@@ -3,25 +3,7 @@ import React from 'react';
 const About = () => {
     return (
         <div className='about-page'>
-            <h1 className='section-header '>Know something about us </h1>
-            <div class="container about-us text-center">
-              <div class="row">
-                <div class="col align-self-start">
-                  <h3>
-                    Who are we?
-                  </h3>
-                  <br/>
-                 <p>
-                 We're a group of people passionate about food and cooking, and we believe that everyone should have access to tasty and nutritious meals. That's why we've created this website, where we share our favorite recipes with you.
-                 </p>
-                </div>
-                <div class="col align-self-center">
-                 <h3> Thank you for visiting our page!</h3>
-                </div>
-               
-              </div>
-            </div>
-
+            <h1 className='section-header'>Sample About Us Page</h1>
     <div className="team-area">
   <div className="container">
     <div className="row g-5">
@@ -118,8 +100,6 @@ const About = () => {
                 <li><a href="#"><i className="fa fa-pinterest"></i></a></li>
                 <li><a href="#"><i className="fa fa-linkedin"></i></a></li>
               </ul>
-
-              
             </div>
           </div>
           <div className="img-text">

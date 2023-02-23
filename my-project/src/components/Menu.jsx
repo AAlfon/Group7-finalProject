@@ -3,8 +3,7 @@ import React from 'react';
 const Menu = () => {
     return (
         <div className='menu-page'>
-            <h1 className='section-header'>All time favorites
-            </h1>
+            <h1 className='section-header'>Sample Menu Page</h1>
             <main>
 
   <div className="container marketing">
