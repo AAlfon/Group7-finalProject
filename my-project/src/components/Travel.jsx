@@ -110,3 +110,5 @@ const Travel = () => {
 </div>
     );
 }
+
+export default Travel;
