@@ -44,6 +44,7 @@ return (
             <li>1/4 cup bell pepper, red, cut into cubes</li>
             <li>2/3 cup milk, evaporated</li>
           </ul>
+          <p><a className="btn" href="#">View More &raquo;</a></p>
       </div>
       <div className="col-md-5">
       <img src="https://panlasangpinoy.com/wp-content/uploads/2015/02/Pininyahang-Manok-sa-Gata.jpg" className="d-block w-100" alt="..." />
@@ -65,6 +66,7 @@ return (
                 In a pinch, you can substitute lemon or lime juice.
                 </li>        
           </ul>
+          <p><a className="btn" href="#">View More &raquo;</a></p>
       </div>
       <div className="col-md-5 order-md-1">
       <img src="https://i0.wp.com/yummyfood.ph/wp-content/uploads/2021/08/Pork-Steak-Recipe.jpg?w=768&ssl=1" className="d-block w-100" alt="..." />
@@ -94,6 +96,7 @@ return (
           <li>2 chayote (peeled and cubed)</li>
           <li>6 baby bok choy</li>          
         </ul>
+        <p><a className="btn" href="#">View More &raquo;</a></p>
       </div>
       <div className="col-md-5">
       <img src="https://thecommhq.files.wordpress.com/2014/10/food8.png" className="d-block w-100" alt="..." />
