@@ -4,7 +4,7 @@ import SingleBlog from '../../components/SingleBlog';
 import Testimonials from '../../components/Testimonials'
 import ImageGallery from '../../components/ImageGallery';
 import FeaturedPost from '../../components/FeaturedPost';
-import CategoryButton from '../../components/CategoryButton';
+import MenuImages from '../../components/MenuImages';
 
 const Home = () => {
 
@@ -21,14 +21,14 @@ const Home = () => {
 
         {/* button link */}
 
-        <a href="#intro"><button className='btn start-btn'>View Recipes</button></a>
+        <a href="#recipes"><button className='btn start-btn'>View Recipes</button></a>
       </div>
       </div>
       
 
       <div className='container-fluid introduction '>
         
-        <h1 className="section-header" id="intro">Introduction</h1>
+        <h1 className="section-header">Introduction</h1>
 
         <div className="container shadow-lg my-5 bg-white border rounded">
         <p className='blog-intro'>
@@ -41,8 +41,8 @@ const Home = () => {
         </div>
       </div>
 
-      <div>
-        <CategoryButton />
+      <div id="recipes">
+        <MenuImages />
       </div>
 
       <main className="container-fluid mb-5">

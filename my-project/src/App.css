@@ -131,7 +131,7 @@ button {
   /* Page Title */
 
   .page-title {
-    margin: 150px auto 30px; 
+    margin: 120px auto 50px; 
     text-transform: uppercase;
     font-size: 50px;
     letter-spacing: 2px; 
@@ -148,6 +148,7 @@ button {
   .display-4 {
     font-size: 2.5rem;
   }
+
 
   @media (min-width: 768px) {
     .display-4 {
@@ -192,19 +193,18 @@ button {
     flex: 0 0 auto;
   }
 
-  /* Menu Page */
+  /* Recipe Page */
 
-  .menu-page h2 {
+  .recipe-page a {
     margin: 10px auto;
+    color: goldenrod;
+    font-weight: 700;
+    text-decoration: none;
+    margin-top: 10px;
   }
 
-  .menu-page .btn {
-    background-color: goldenrod;
-    font-weight: 600;
-  }
-
-  .menu-page .btn:hover {
-    background-color: gold;
+  .recipe-page a:hover {
+    color: gold;
   }
   
 
@@ -579,7 +579,7 @@ transition: all .5s ease-in-out;
 }
 
 .btn-group .view-more {
-background: #fe6d38;
+background: goldenrod;
 color: #fff;
 font-size: 14px;
 margin-right: 5px;
@@ -594,7 +594,7 @@ font-weight: 600;
 transition: .6s;
 }
 
-.view-more:hover {
+.btn-group .view-more:hover {
   background-color: gold;
 }
 

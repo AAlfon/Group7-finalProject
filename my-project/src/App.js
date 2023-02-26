@@ -14,7 +14,7 @@ import CategoryBlog from './components/CategoryBlog'
 import RegisterForm from './admin/RegisterForm'
 import Contact from './components/Contact';
 import Travel from './components/Travel';
-import Menu from './components/Menu';
+import MenuImages from './components/MenuImages';
 import About from './components/About';
 import Footer from './components/Footer';
 import Chicken from './components/Chicken'
@@ -40,7 +40,7 @@ const App = () => {
         <Route path="/register" element={<RegisterForm />} />
         <Route path="/category" element={<CategoryBlog />} />
         <Route path="/contact" element={<Contact />} />
-        <Route path="/menu" element={<Menu />} />
+        <Route path="/menuimages" element={<MenuImages />} />
         <Route path="/about" element={<About />} />
         <Route path="/travel" element={<Travel />} />
         <Route path="/post/:id" element={<BlogPost />} />
@@ -54,7 +54,6 @@ const App = () => {
         <Route path="/category/desserts" element={<Desserts />} />
         <Route path="/category/vegetables" element={<Vegetables />} />
         <Route path="/category/destinations" element={<Destinations />} />
-        {/* <Route path="/category/:category" component={CategoryPage} /> */}
         
           
     </Routes>
