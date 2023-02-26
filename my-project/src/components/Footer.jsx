@@ -1,51 +1,38 @@
 import React from 'react';
+import logo1 from '../assets/logo.png'
+import { Link } from 'react-router-dom';
 
 const Footer = () => {
     return (
         <div>
     <footer>
-        <div className="container">
-            <div className="row">
-                <div className="col-lg-3 col-sm-6">
+        <div className="container-fluid">
+            <div className="row p-5">
+                <div className="col-lg-4 col-sm-6">
                     <div className="single-box">
-                        <img src="img/logo.png" alt="" />
-                    <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Quam repellendus sunt praesentium aspernatur iure molestias.</p>
-                    <h3>We Accect</h3>
-                    <div className="card-area">
-                            <i className="fa fa-cc-visa"></i>
-                            <i className="fa fa-credit-card"></i>
-                            <i className="fa fa-cc-mastercard"></i>
-                            <i className="fa fa-cc-paypal"></i>
+                    <img src={logo1} width={100} className="mb-2" alt="sample company logo" />
+                    <h2>Hak Food Blog</h2>
+                    <div>
+                    <p>Welcome to our recipe blog website! Our goal is to provide you with a wide variety of delicious and easy-to-follow recipes that you can enjoy with your family and friends. Whether you're a seasoned cook or a beginner in the kitchen, we have something for everyone.</p>
                     </div>
                     </div>
                 </div>
-                <div className="col-lg-3 col-sm-6">
-                    <div className="single-box">
-                        <h2>Hosting</h2>
-                    <ul>
-                        <li><a href="#">Web Hosting</a></li>
-                        <li><a href="#">Cloud Hosting</a></li>
-                        <li><a href="#">CMS Hosting</a></li>
-                        <li><a href="#">WordPress Hosting</a></li>
-                        <li><a href="#">Email Hosting</a></li>
-                        <li><a href="#">VPS Hosting</a></li>
+                <div className="col-lg-4 col-sm-6">
+                    <div className="single-box text-center">
+                        <h2>Categories</h2>
+                    <ul className='footer-links'>
+                        <li><Link to="/category/pork">Pork Recipes</Link></li>
+                        <li><Link to="/category/beef">Beef Recipes</Link></li>
+                        <li><Link to="/category/fish">Fish Recipes</Link></li>
+                        <li><Link to="/category/chicken">Chicken Recipes</Link></li>
+                        <li><Link to="/category/vegetables">Vegetables Recipes</Link></li>
+                        <li><Link to="/category/desserts">Desserts Recipes</Link></li>
+                        <li><Link to="/category/destinations">Food Destinations</Link></li>
                     </ul>
                     </div>                    
                 </div>
-                <div className="col-lg-3 col-sm-6">
-                    <div className="single-box">
-                        <h2>Domain</h2>
-                    <ul>
-                        <li><a href="#">Web Domain</a></li>
-                        <li><a href="#">Cloud Domain</a></li>
-                        <li><a href="#">CMS Domain</a></li>
-                        <li><a href="#">WordPress Domain</a></li>
-                        <li><a href="#">Email Domain</a></li>
-                        <li><a href="#">VPS Domain</a></li>
-                    </ul>
-                    </div>                    
-                </div>
-                <div className="col-lg-3 col-sm-6">
+                
+                <div className="col-lg-4 col-sm-6">
                     <div className="single-box">
                         <h2>Newsletter</h2>
                         <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Consequuntur doloremque earum similique fugiat nobis. Facere?</p>
@@ -60,10 +47,13 @@ const Footer = () => {
                             <i className="fa fa-pinterest"></i>
                             <i className="fa fa-twitter"></i>
                         </p>
-                        <a className='back-arrow' href="#">Back to top</a>
+                        <span><a className='back-arrow' href="#">Back to top<i className="fa fa-long-arrow-up arrow-up"></i></a></span>
                     </div>
                 </div>
             </div>
+            <div className='row justify-content-center'>
+                    <p class="m-0 text-center text-white">Copyright &copy; Hak Food Blog (Group7) {new Date().getUTCFullYear()}</p>
+        </div>
         </div>
     </footer>
         </div>

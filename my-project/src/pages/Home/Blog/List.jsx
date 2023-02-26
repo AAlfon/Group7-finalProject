@@ -23,7 +23,7 @@ const List = () => {
   return (
     <div className='container my-5 py-5'>
       <main className="container my-5">
-        <h1 className="section-header">Latest Post</h1>
+        <h1 className="page-title">Latest Post</h1>
         <div className="row mb-2">
 
           {posts.map((post) => (

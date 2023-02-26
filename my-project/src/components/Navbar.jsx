@@ -26,13 +26,13 @@ const Navbar = () => {
     window.addEventListener("scroll", changeBackground)
   })
 
-    return (
-      <div>
-        <nav className="navbar fixed-top navbar-expand-lg px-3" style={{backgroundColor: change, transition: "all 1s"}}>
+  return (
+    <div>
+      <nav className="navbar fixed-top navbar-expand-lg px-3" style={{ backgroundColor: change, transition: "all 1s" }}>
         <Link to="/" className="navbar-brand">
-        <img src={logo1} alt="" width="100" style={{height: logoHeight, transition: "all 1s"}} class="d-inline-block align-text-top" />
+          <img src={logo1} alt="" width="100" style={{ height: logoHeight, transition: "all 1s" }} class="d-inline-block align-text-top" />
         </Link>
-        <button className="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+        <button className="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
           <span className="navbar-toggler-icon"></span>
         </button>
 
@@ -43,11 +43,22 @@ const Navbar = () => {
               <Link to="/" className="nav-link">Home </Link>
             </li>
             <li className="nav-item">
-              <Link to="/menu" className="nav-link" >Menu</Link>
+              <Link to="/blog" className="nav-link">Blog</Link>
             </li>
-            <li className="nav-item">
-            <Link to="/blog" className="nav-link">Blog</Link>
+            <li className="nav-item dropdown">
+              <a className="nav-link dropbtn" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                Categories <i className="fa fa-caret-down"></i>
+              </a>
+              <div className="dropdown-content" aria-labelledby="navbarDropdown">
+                <Link to="/category/pork" className='down-link'>Pork</Link>
+                <Link to="/category/beef" className='down-link'>Beef</Link>
+                <Link to="/category/fish" className='down-link'>Fish</Link>
+                <Link to="/category/chicken" className='down-link'>Chicken</Link>
+                <Link to="/category/vegetables" className='down-link'>Vegetables</Link>
+                <Link to="/category/desserts" className='down-link'>Desserts</Link>
+              </div>
             </li>
+
             <li className="nav-item">
               <Link to="/travel" className="nav-link" >Food Destinations</Link>
             </li>
@@ -58,12 +69,12 @@ const Navbar = () => {
               <Link to="/contact" className="nav-link" >Contact Us</Link>
             </li>
           </ul>
-  </div>
-  <SearchForm />
-</nav>
-</div>
+        </div>
+        <SearchForm />
+      </nav>
+    </div>
 
-    );
+  );
 }
 
 export default Navbar;

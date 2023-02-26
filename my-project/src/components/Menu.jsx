@@ -1,37 +1,58 @@
-import React from 'react';
+import React, { useEffect, useState } from 'react';
+import axios from 'axios';
+import { NavLink } from 'react-router-dom';
+
 
 const Menu = () => {
+
+  const [posts, setPosts] = useState([]);
+
+  const Api_url = 'http://localhost:8000/api/';
+
+  const fetchPosts = async () => {
+    try {
+      const response = await axios.get(Api_url + 'posts');
+      setPosts(response.data);
+    } catch (error) {
+      console.error(error);
+    }
+  };
+
+  useEffect(() => {
+    fetchPosts();
+  }, []);
+  
     return (
-        <div className='menu-page'>
-            <h1 className='section-header'>Sample Menu Page</h1>
+        <div className='container'>
+            <h1 className='page-title'>Menu Page</h1>
             <main>
 
-  <div className="container marketing">
+  <div className="container menu-page">
 
     <div className="row">
       <div className="col-lg-4">
-      <img className="bd-placeholder-img rounded-circle" width="150" height="150" src="https://cdn1.matadornetwork.com/blogs/1/2021/04/bananacue-filipino-desserts.jpg" role="img" aria-label="Placeholder: 140x140" preserveAspectRatio="xMidYMid slice" focusable="false" />
+      <img className="bd-placeholder-img rounded-circle" d-block fluid width="200" height="200" bg-danger src="https://cdn1.matadornetwork.com/blogs/1/2021/04/bananacue-filipino-desserts.jpg" role="img" aria-label="Placeholder: 140x140" preserveAspectRatio="xMidYMid slice" focusable="false" />
 
         <h2>Banana Cue</h2>
         <p>Banana Cue is made of fried banana on bamboo skewers and the most consumed as a mid-afternoon snack.  
           People can’t resist this because aside from being delicious it is also nutritious and also considered as one of the all-time best selling street food.</p>
-        <p><a className="btn btn-secondary" href="#">View details &raquo;</a></p>
+        <p><a className="btn" href="#">View details &raquo;</a></p>
       </div>
       <div className="col-lg-4">
-      <img className="bd-placeholder-img rounded-circle" width="150" height="150" src="https://cdn1.matadornetwork.com/blogs/1/2021/04/Puto-bumbong-filiipino-dessert.jpg" role="img" aria-label="Placeholder: 140x140" preserveAspectRatio="xMidYMid slice" focusable="false" />
+      <img className="bd-placeholder-img rounded-circle" d-block fluid width="200" height="200" src="https://cdn1.matadornetwork.com/blogs/1/2021/04/Puto-bumbong-filiipino-dessert.jpg" role="img" aria-label="Placeholder: 140x140" preserveAspectRatio="xMidYMid slice" focusable="false" />
 
         <h2>Puto bumbong</h2>
         <p>Puto bumbong is a type of Filipino purple rice cake which is prepared by steaming ground purple rice mixture inside a bamboo tube. 
           The tube is referred to as “bumbong ng kawayan” in Filipino. This might have been the reason why this was named as such.</p>
-        <p><a className="btn btn-secondary" href="#">View details &raquo;</a></p>
+        <p><a className="btn" href="#">View details &raquo;</a></p>
       </div>
       <div className="col-lg-4">
-      <img className="bd-placeholder-img rounded-circle" width="150" height="150" src="https://cdn1.matadornetwork.com/blogs/1/2021/04/Ginataang-Bilo-Bilo-filipino-dessert.jpg" role="img" aria-label="Placeholder: 140x140" preserveAspectRatio="xMidYMid slice" focusable="false" />
+      <img className="bd-placeholder-img rounded-circle" d-block fluid width="200" height="200" src="https://cdn1.matadornetwork.com/blogs/1/2021/04/Ginataang-Bilo-Bilo-filipino-dessert.jpg" role="img" aria-label="Placeholder: 140x140" preserveAspectRatio="xMidYMid slice" focusable="false" />
 
         <h2>Ginataang bilo-bilo</h2>
         <p>Ginataang Bilo-bilo with Langka is a Filipino snack dish. It is composed of glutinous rice balls (locally known as bilo-bilo), coconut cream, sugar, sago pearls, and ripe jackfruit. 
           Some people consider this as a simplified version of the Ginataang halo-halo.</p>
-        <p><a className="btn btn-secondary" href="#">View details &raquo;</a></p>
+        <p><a className="btn" href="#">View details &raquo;</a></p>
       </div>
     </div>
 
