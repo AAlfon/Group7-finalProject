@@ -17,8 +17,15 @@ import Travel from './components/Travel';
 import Menu from './components/Menu';
 import About from './components/About';
 import Footer from './components/Footer';
+import Chicken from './components/Chicken'
+import Beef from './components/Beef'
+import Pork from './components/Pork'
+import Fish from './components/Fish'
+import Vegetables from './components/Vegetables'
+import Desserts from './components/Desserts'
+import Destinations from './components/Destinations'
 
-function App() {
+const App = () => {
   return (
     <Router>
     <Navbar />
@@ -37,6 +44,17 @@ function App() {
         <Route path="/about" element={<About />} />
         <Route path="/travel" element={<Travel />} />
         <Route path="/post/:id" element={<BlogPost />} />
+
+        {/* CATEGORIES */}
+        
+        <Route path="/category/chicken" element={<Chicken />} />
+        <Route path="/category/pork" element={<Pork />} />
+        <Route path="/category/beef" element={<Beef />} />
+        <Route path="/category/fish" element={<Fish />} />
+        <Route path="/category/desserts" element={<Desserts />} />
+        <Route path="/category/vegetables" element={<Vegetables />} />
+        <Route path="/category/destinations" element={<Destinations />} />
+        {/* <Route path="/category/:category" component={CategoryPage} /> */}
         
           
     </Routes>
