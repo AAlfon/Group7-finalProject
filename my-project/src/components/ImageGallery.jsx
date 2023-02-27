@@ -4,7 +4,7 @@ function ImageGallery() {
   return (
     <div>
         <div className="container">
-          <h2 className="section-header">Food Recipes</h2>
+          <h2 className="page-title">Food Recipes</h2>
           <div className="main-content">
             <div className="box">
               <img src="https://i.pinimg.com/736x/6c/52/81/6c528187700fb46afda2b184e7fc11ae.jpg" alt="" />

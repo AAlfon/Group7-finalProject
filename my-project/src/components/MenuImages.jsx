@@ -17,10 +17,9 @@ const MenuImages = ({ handleCategoryClick }) => {
   }, [category]);
 
   return (
-    <div className='container-fluid'>
-    <h1 className='page-title'>Recipes</h1>
-    <main>
-    <div className="recipe-page">
+    <div className='container-fluid my-5 py-5'>
+      <h1 className="page-title">Recipes</h1>
+      <div className="recipe-page">
     <div className="row text-center">
       <div className="col-lg-2">
       <Link to="/category/pork">
@@ -66,9 +65,7 @@ const MenuImages = ({ handleCategoryClick }) => {
 
     </div>
     </div>
-    </main>
     </div>
-
   )
 }
 

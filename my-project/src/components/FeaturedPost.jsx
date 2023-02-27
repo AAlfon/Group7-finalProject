@@ -22,10 +22,10 @@ const FeaturedPost = () => {
 
   return (
     <div className='container my-5 py-5'>
+      <h1 className="page-title">Featured Post</h1>
       <div className="row">
       <div className="col-auto">
-      <main className="container my-5">
-        <h1 className="section-header">Featured Post</h1>
+      <main className="container-fluid my-5">
         <div className="row mb-2">
 
           {posts.map((post) => (

@@ -21,8 +21,8 @@ const SingleBlog = () => {
   }, []);
 
   return (
-    <div>
-      <h1 className='section-header'>Latest Blog</h1>
+    <div className="container">
+      <h1 className='page-title'>Latest Blog</h1>
         {posts.map((post) => (
         <div key={post.id} className="p-4 p-md-5 mb-4 text-dark rounded bg-warning">
           <div className='row'>

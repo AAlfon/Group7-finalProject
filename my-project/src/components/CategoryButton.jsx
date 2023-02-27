@@ -17,10 +17,10 @@ const CategoryButton = ({ handleCategoryClick }) => {
   }, [category]);
 
   return (
+    <div className='container'>
+    <h2 className="page-title border rounded ">Recipes</h2>
     <div>
-    <header className="blog-header border rounded container-fluid">
-    <div>
-      <div className=" container">
+      <div className=" container-fluid">
         <nav className="nav nav-menu d-flex justify-content-between">
           
           <Link to="/category/pork"><button className='menu-link'>Pork</button></Link>
@@ -35,7 +35,6 @@ const CategoryButton = ({ handleCategoryClick }) => {
       </nav>
       </div>
       </div>
-    </header>
     </div>
   );
 };
