@@ -22,28 +22,37 @@ const FeaturedPost = () => {
 
   return (
     <div className='container my-5 py-5'>
+      <div className="row">
+      <div className="col-auto">
       <main className="container my-5">
         <h1 className="section-header">Featured Post</h1>
         <div className="row mb-2">
 
           {posts.map((post) => (
             <div key={post.id} className="col-md-6">
-              <div className="row g-0 border rounded overflow-hidden flex-md-row mb-4 shadow-sm h-md-250 position-relative">
-                <div className="col p-4 d-flex flex-column position-static">
-                  <strong className="d-inline-block mb-2 text-success">{post.category}</strong>
-                  <NavLink to={`/post/${post.id}`}><h3 className="mb-0">{post.title}</h3></NavLink>
-                  <p className="mb-0">{post.description}</p>
-                  <NavLink to={`/post/${post.id}`}><p className='stretch-link'>Continue reading</p></NavLink>
+              <div className="row g-0 border rounded overflow-hidden  p-3 flex-md-row mb-4 shadow-lg h-md-250 position-relative">
+                
+              <div className='row'>
+            <div className="col-md-7 px-0">
+                  <div>
+                  <NavLink to={`/post/${post.id}`}><h4 className="mb-0">{post.title}</h4></NavLink>
+                  <strong className="d-inline-block mb-2">{post.category}</strong>
+                  <p className="my-3">{post.short_description}</p>
+                  <NavLink to={`/post/${post.id}`}><p className="stretch-link redirect">Continue reading...</p></NavLink>
                 </div>
-                <div className="col-auto d-none d-lg-block">
-                  <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcShG00v1pL_U6VG_QkptjP-aNrIV9L6euCuvg&usqp=CAU" className="d-block w-100 h-100" preserveAspectRatio="xMidYMid slice" alt="..." />
                 </div>
+                <div className="col-5 d-none d-lg-block">
+                <img src={post.image} className="d-block w-100 h-100 pb-2"/>
+                </div>
+              </div>
               </div>
               </div>
           ))}
 
         </div>
       </main>
+      </div>
+      </div>
     </div>
   );
 };
