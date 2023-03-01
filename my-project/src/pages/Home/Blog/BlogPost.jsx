@@ -26,25 +26,21 @@ const BlogPost = () => {
   return (
     <div className='my-5 py-5'>
       <div className='container'>
-        <div className='row'>
-          <div className="col">
-          <div className='single-post p-5'>
+      <div className='single-post p-5'>
         <div className='row text-center'>
         <h2>{post.title}</h2>
-        <div className='row'>
+        <div className='col-8'>
           <p>Category: {post.category}</p>
         </div>
         </div>
-        <p>{post.description}</p>
+        <p>{post.short_description}</p>
       </div>
       <h4>Please leave a comment.</h4>
-    </div>
           </div>
           <div className="col-auto">
     <BlogList />
           </div>
         </div>
-    </div>
   )
 }
 
