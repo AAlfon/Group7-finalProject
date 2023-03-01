@@ -21,10 +21,6 @@ const Home = () => {
         <div className="container shadow-lg my-5 bg-transparent border rounded">
         <p className='blog-intro'>
           Welcome to our recipe blog website! Our goal is to provide you with a wide variety of delicious and easy-to-follow recipes that you can enjoy with your family and friends. Whether you're a seasoned cook or a beginner in the kitchen, we have something for everyone.
-          <br/><br/>
-          We believe that food should be both enjoyable and nourishing, and that's why we only feature recipes that use wholesome ingredients and easy-to-find pantry staples. From classic comfort foods to exotic dishes from around the world, we've got you covered.
-          <br/><br/>
-          So, pull up a chair, grab a cup of coffee, and browse through our collection of mouth-watering recipes. We hope you find inspiration and joy in the kitchen, and that our recipes become a regular part of your mealtime routine. Happy cooking!
         </p>
         </div>
 
@@ -38,6 +34,13 @@ const Home = () => {
       <div className='container-fluid introduction '>
         
         <h1 className="section-header">Introduction</h1>
+        <div className="container shadow-lg my-5 bg-transparent border rounded">
+        <p className='blog-intro'>
+          We believe that food should be both enjoyable and nourishing, and that's why we only feature recipes that use wholesome ingredients and easy-to-find pantry staples. From classic comfort foods to exotic dishes from around the world, we've got you covered.
+          <br/><br/>
+          So, pull up a chair, grab a cup of coffee, and browse through our collection of mouth-watering recipes. We hope you find inspiration and joy in the kitchen, and that our recipes become a regular part of your mealtime routine. Happy cooking!
+        </p>
+        </div>
 
      
       </div>
