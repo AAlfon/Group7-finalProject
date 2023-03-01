@@ -3,16 +3,15 @@ import axios from 'axios';
 import { NavLink } from 'react-router-dom';
 
 
-const EditPost = ({ id, title, category, description, onUpdate }) => {
-  const [post, setPost] = useState({ id, title, category, description });
+const EditPost = ({ id, title, short_description, category, long_description, author, image, onUpdate }) => {
+  const [post, setPost] = useState({ id, title, category, short_description,long_description, image });
 
   const handleInputChange = (event) => {
     const { name, value, files } = event.target;
-    if (name === 'image') {
-      setPost((prevPost) => ({ ...prevPost, [name]: files[0] }));
-    } else {
-      setPost((prevPost) => ({ ...prevPost, [name]: value }));
-    }
+    setPost((prevPost) => ({
+      ...prevPost,
+      [name]: name === 'image' ? files[0] : value
+    }));
   };
   
 
@@ -31,12 +30,18 @@ const EditPost = ({ id, title, category, description, onUpdate }) => {
     const formData = new FormData();
     formData.append('image', event.target.files[0]);
   
+    const config = {
+      headers: {
+        'Content-Type': 'multipart/form-data'
+      }
+    };
+  
     try {
-      const response = await axios.post('http://localhost:8000/api/posts/upload-image', formData, {
-        headers: {
-          'Content-Type': 'multipart/form-data'
-        }
-      });
+      const response = await axios.post(
+        'http://localhost:8000/api/posts/upload-image',
+        formData,
+        config
+      );
   
       setPost((prevPost) => ({ ...prevPost, image: response.data.image_url }));
     } catch (error) {
@@ -44,11 +49,13 @@ const EditPost = ({ id, title, category, description, onUpdate }) => {
     }
   };
   
+  
   return (
     <form onSubmit={handleSubmit}>
       <input type="text" name="title" value={post.title} onChange={handleInputChange} />
       <input type="text" name="category" value={post.category} onChange={handleInputChange} />
-      <textarea type="text" name="description" value={post.description} onChange={handleInputChange} cols="60" rows="10"></textarea>
+      <textarea type="text" name="short_description" value={post.short_description} onChange={handleInputChange} cols="60" rows="5"></textarea>
+      <textarea type="text" name="long_description" value={post.long_description} onChange={handleInputChange} cols="60" rows="10"></textarea>
       <input type="file" onChange={handleImageChange} />
       {post.image && <img src={post.image} alt="Post image" />}
       <button type="submit">Update</button>
@@ -62,14 +69,13 @@ const ListHome = () => {
 
   const Api_url = 'http://localhost:8000/api/';
 
-  const fetchPosts = async () => {
-    try {
-      const response = await axios.get(Api_url + 'posts');
-      setPosts(response.data);
-    } catch (error) {
-      console.error(error);
-    }
+  const fetchPost = async () => {
+    
+      const response = await axios.get(Api_url + 'posts').then(res=> console.table(res.data)).catch((e)=>{
+        console.log(e)
+      })
   };
+  
 
   const deletePost = async (id) => {
     try {
@@ -81,19 +87,15 @@ const ListHome = () => {
   };
 
   const updatePost = (updatedPost) => {
-    setPosts(posts.map((post) => {
-      if (post.id === updatedPost.id) {
-        return updatedPost;
-      } else {
-        return post;
-      }
-    }));
-  };
+    setPosts(posts.map((post) => (post.id === updatedPost.id ? updatedPost : post)));
+  };  
   
 
   useEffect(() => {
-    fetchPosts();
-  }, []);
+    return() => {
+      fetchPost();
+    };
+  },[])
 
   return (
     <div className='container my-5'>
@@ -105,14 +107,16 @@ const ListHome = () => {
             <h1>{post.title}</h1>
           </NavLink>
           <p>{post.category}</p>
-          <p>{post.description}</p>
+          <p>{post.short_description}</p>
           <button onClick={() => deletePost(post.id)} className="my-3">Delete</button>
           <br />
           <EditPost
             id={post.id}
             title={post.title}
+            short_description={post.short_description}
             category={post.category}
-            description={post.description}
+            long_description={post.long_description}
+            image={post.image}
             onUpdate={updatePost} className="my-3"
           />
         </div>

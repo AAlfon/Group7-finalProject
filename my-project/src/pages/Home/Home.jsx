@@ -5,6 +5,8 @@ import Testimonials from '../../components/Testimonials'
 import ImageGallery from '../../components/ImageGallery';
 import FeaturedPost from '../../components/FeaturedPost';
 import MenuImages from '../../components/MenuImages';
+import ImageGallary from '../../components/ImageGallary';
+
 
 const Home = () => {
 
@@ -44,6 +46,8 @@ const Home = () => {
       <div id="recipes">
         <MenuImages />
       </div>
+
+      <ImageGallary />
 
       <main className="container-fluid mb-5">
         <div className='my-2'>
