@@ -81,9 +81,12 @@ button {
 
   #myVideo {
     position: absolute;
+    
     right: 0;
     top: 0;
     min-height: 100%;
+    filter:opacity(70%);
+   
   }
  
   .introduction {
@@ -91,8 +94,11 @@ button {
     margin: 1100px auto 20px ;
   }
 
+ 
+
   .blog-intro{
     padding: 10px;
+    color: black;
     margin: 10px auto;
     font-size: 1.2rem;
     font-weight: 600;
@@ -230,18 +236,20 @@ button {
   text-transform: uppercase;
   margin-bottom: 15px;
   text-shadow: 0px -1px 13px rgba(0,0,0,10);
-  border-bottom: 2mm ridge rgba(234, 231, 83, 0.6);
+ 
 }
 
 .start-btn {
-  color: goldenrod;
+  color: black;
+  font-size: 20px;
+  font-weight: 600;
   padding: 20px;
   border-radius: 10px;
   outline-style: groove;
 }
 
 .content button:hover {
-  background-color: goldenrod;
+  background-color: #a66c19;
 }
 
 .content p {
@@ -315,8 +323,8 @@ button {
    */
   
   footer {
-    background: rgb(152,152,152);
-    background: linear-gradient(212deg, rgba(152,152,152,1) 0%, rgba(0,0,0,1) 50%, rgba(252,176,69,0.4906337535014006) 100%);
+    background: rgb(122,122,122);
+background: linear-gradient(212deg, rgba(122,122,122,0.5802696078431373) 0%, rgba(0,0,0,0.8631827731092436) 50%, rgba(171,107,16,1) 100%);
   }
 
   .single-content {
@@ -402,7 +410,8 @@ button {
     text-align: center;
     font-weight: 800;
     color: goldenrod;
-    background-color: black;
+    background: rgb(122,122,122);
+background: linear-gradient(212deg, rgba(122,122,122,0.5802696078431373) 0%, rgba(0,0,0,0.8631827731092436) 50%, rgba(171,107,16,1) 100%);
     border-radius: 10px;
     border-style: groove;
 }

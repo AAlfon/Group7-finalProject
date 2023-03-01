@@ -13,7 +13,7 @@ const Navbar = () => {
   const changeBackground = () => {
     // console.log(window.scrollY)
     if (window.scrollY >= 80) {
-      setChange('goldenrod')
+      setChange('#a66c19')
       setlogoHeight(70)
     } else {
       setChange('transparent')
